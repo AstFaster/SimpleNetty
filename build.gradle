@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+group = 'fr.astfaster'
+version = '0.0.1'
+archivesBaseName = 'SimpleNetty'
+
+compileJava{
+    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.netty:netty-all:4.1.60.Final'
+}
